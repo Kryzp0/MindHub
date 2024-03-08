@@ -1,0 +1,164 @@
+    :root {
+        --beige: #FFECD6;
+        --celeste: #4CB9E7;
+        --azul: #3559E0;
+        --navy: #0F2167;
+
+
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        /* outline: 1px solid red; */
+
+    }
+
+    body {
+        background-image: url(../assets/imagenes/fondo.png);
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+    header {
+        display: inline-block;
+        height: 15vh;
+        padding: 0.5rem;
+        background-color: black;
+        width: 100%;
+
+    }
+
+    h1 {
+        font-family: "GROBOLD";
+        position: absolute;
+        left: 10vw;
+        top: 3vh;
+        font-size: 50px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+    }
+
+    nav {
+        position: absolute;
+        top: 10vh;
+        left: 72.5vw;
+        justify-content: space-around;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    nav a:after{
+        content: "";
+        position: absolute;
+        background-color: aqua;
+        height: 3px;
+        width: 0%;
+        left: 0;
+        bottom: -5px;
+        transition: all 1s;
+    }
+    nav a:hover::after{
+        width: 100%;
+     }
+
+    main {
+        min-height: 80vh;
+    }
+
+
+    .style1 {
+        display: none;
+    }
+
+    #logo {
+        display: inline-block;
+        height: 100px;
+        position: absolute;
+        top: 0vh;
+        left: 1vw;
+    }
+
+    .cardContainer {
+        width: 60vw;
+        display: inline-block;
+    }
+
+    .card {
+        width: 60vw;
+        backdrop-filter: blur(20px);
+        display: inline-block;
+        margin-top: 30px;
+        height: 200px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.467);
+        border-radius: 1rem; 
+        object-fit: cover;
+    }
+
+
+    #contact, .cardContainer{
+        margin: 100px 0px 100px 0px;
+        position: relative;
+        left: 20vw;
+        /* text-align: center; */
+    }
+
+    .url{
+        color: rgba(8, 0, 255, 0.814);
+    }
+
+    .cardText {
+        display: inline-block;
+        padding: 1.5rem;
+        text-align: start;
+        vertical-align: top;
+        font-size: 16px;
+        width: 60%;
+    }
+    #banner, #contact{
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #banner>h2{
+        margin-top: 120px;
+        font-size: 40px;
+        font-weight: bolder;
+        text-shadow: 4px 4px black;
+    }
+
+    .cardImg{
+        position: relative;
+        left: 85px;
+        height: 100%;
+        width: 30%;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .card:hover{
+        transform: scale(1.1);
+    }
+
+
+    footer {   
+        height: 5vh;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }

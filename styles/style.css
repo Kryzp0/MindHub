@@ -97,6 +97,21 @@ header nav a:hover::after {
 
 }
 
+a[href="#"] {
+    color: white;
+}
+
+a[href="#"]::after{
+    content: "";
+    position: absolute;
+    background-color: var(--titulo);
+    transition: all 0.5s;
+    height: 3px;
+    width: 100%;
+    top: 25px;
+    left: -1.5px;
+}
+
 header nav a:hover {
     color: white;
 }

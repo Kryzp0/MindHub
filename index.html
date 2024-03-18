@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Vega">
+    <meta name="description"
+        content="pagina de tienda de juegos, la cual posee apartado de recomendados, favoritos y el precio de cada título">
+    <meta name="keywords" content="juegos, pc, gamer, gaming, playsation, play, xbox, videogames, mobile">
+    <title>Todo Juegos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Imagenes/logo1.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="flex">
+        <div class="header_text flex">
+            <img src="./Imagenes/logo1.png" alt="logo con frase PC GAMER">
+            <h1>Todo Juegos</h1>
+            <img src="./Imagenes/logo2.png" alt="logo de playstation">
+        </div>
+        <nav class="flex">
+            <a href="#">Principal</a>
+            <a href="">Favoritos</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Recomendados</h2>
+            <div class="card_container flex">
+                <article class="card flex">
+                    <img src="./Imagenes/jedi.webp" alt="caratula del juego star wards jedi fallen order">
+                    <h3>Jedi Fallen</h3>
+                </article>
+                <article class="card flex">
+                    <img src="./Imagenes/Valorant.jpg" alt="imagen de valorant centrando a personaje llamado jett">
+                    <h3>Valorant</h3>
+                </article>
+                <article class="card flex">
+                    <img src="./Imagenes/league-of-legends.jpg"
+                        alt="imagen de league of legends, con logo y personajes de fondo">
+                    <h3>League of Legends</h3>
+                </article>
+            </div>
+            <article class="info_container flex">
+                <h2>Plataformas para Jugar videojuegos</h2>
+                <div class="info flex">
+                    <ul>
+                        <li>Pc</li>
+                        <li>Playstation</li>
+                        <li>Xbox</li>
+                        <li>Mobile</li>
+                    </ul>
+                </div>
+                <div class="info flex">
+                    <table>
+                        <tr>
+                            <th>Game</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>Call of duty Modern
+                                Warfare</td>
+                            <td>$45.49</td>
+                        </tr>
+                        <tr>
+                            <td>Fifa 2024</td>
+                            <td>$11.00</td>
+                        </tr>
+                        <tr>
+                            <td>Baldurs Gate 3</td>
+                            <td>$32.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cyberpunk</td>
+                            <td>$22.49</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="flex">
+        <p>2024 - Todos los derechos resevados</p>
+        <form action="./show_data.html" method="get">
+            <fieldset>
+                <legend>Suscribite</legend>
+                <label>email
+                    <input type="email" name="email" required>
+                </label>
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+        <p>Chris Vega</p>
+    </footer>
+
+</body>
+
+</html>
